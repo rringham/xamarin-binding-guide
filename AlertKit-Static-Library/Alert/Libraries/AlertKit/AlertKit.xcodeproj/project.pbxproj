@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9BA67E07198E895D00D77769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67E06198E895D00D77769 /* Foundation.framework */; };
-		9BA67E0C198E895D00D77769 /* AlertKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BA67E0B198E895D00D77769 /* AlertKit.h */; };
-		9BA67E0E198E895D00D77769 /* AlertKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA67E0D198E895D00D77769 /* AlertKit.m */; };
+		9BA67E0C198E895D00D77769 /* AKAlert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BA67E0B198E895D00D77769 /* AKAlert.h */; };
+		9BA67E0E198E895D00D77769 /* AKAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA67E0D198E895D00D77769 /* AKAlert.m */; };
 		9BA67E15198E895D00D77769 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67E14198E895D00D77769 /* XCTest.framework */; };
 		9BA67E16198E895D00D77769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67E06198E895D00D77769 /* Foundation.framework */; };
 		9BA67E18198E895D00D77769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67E17198E895D00D77769 /* UIKit.framework */; };
@@ -35,7 +35,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9BA67E0C198E895D00D77769 /* AlertKit.h in CopyFiles */,
+				9BA67E0C198E895D00D77769 /* AKAlert.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +45,8 @@
 		9BA67E03198E895D00D77769 /* libAlertKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlertKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA67E06198E895D00D77769 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BA67E0A198E895D00D77769 /* AlertKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlertKit-Prefix.pch"; sourceTree = "<group>"; };
-		9BA67E0B198E895D00D77769 /* AlertKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertKit.h; sourceTree = "<group>"; };
-		9BA67E0D198E895D00D77769 /* AlertKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertKit.m; sourceTree = "<group>"; };
+		9BA67E0B198E895D00D77769 /* AKAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AKAlert.h; sourceTree = "<group>"; };
+		9BA67E0D198E895D00D77769 /* AKAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKAlert.m; sourceTree = "<group>"; };
 		9BA67E13198E895D00D77769 /* AlertKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA67E14198E895D00D77769 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9BA67E17198E895D00D77769 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,8 +110,8 @@
 		9BA67E08198E895D00D77769 /* AlertKit */ = {
 			isa = PBXGroup;
 			children = (
-				9BA67E0B198E895D00D77769 /* AlertKit.h */,
-				9BA67E0D198E895D00D77769 /* AlertKit.m */,
+				9BA67E0B198E895D00D77769 /* AKAlert.h */,
+				9BA67E0D198E895D00D77769 /* AKAlert.m */,
 				9BA67E09198E895D00D77769 /* Supporting Files */,
 			);
 			path = AlertKit;
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA67E0E198E895D00D77769 /* AlertKit.m in Sources */,
+				9BA67E0E198E895D00D77769 /* AKAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +405,7 @@
 				9BA67E28198E895D00D77769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA67E29198E895D00D77769 /* Build configuration list for PBXNativeTarget "AlertKitTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				9BA67E2B198E895D00D77769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

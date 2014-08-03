@@ -7,7 +7,7 @@
 //
 
 #import "ALViewController.h"
-#import "AlertKit.h"
+#import "AKAlert.h"
 
 @interface ALViewController ()
 
@@ -29,7 +29,7 @@
 
 - (IBAction)alertButtonPressed:(id)sender
 {
-    AlertKit *ak = [[AlertKit alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred!"];
+    AKAlert *ak = [[AKAlert alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred!"];
     [ak alert];
 }
 

@@ -1,5 +1,5 @@
 //
-//  AlertKit.h
+//  AKAlert.h
 //  AlertKit
 //
 //  Created by Rob Ringham on 8/3/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AlertKit : NSObject
+@interface AKAlert : NSObject
 
 - (id)initWithAlertMessage:(NSString *)alertMessage;
 - (void)alert;

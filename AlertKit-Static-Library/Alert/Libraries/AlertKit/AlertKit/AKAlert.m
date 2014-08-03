@@ -1,15 +1,15 @@
 //
-//  AlertKit.m
+//  AKAlert.m
 //  AlertKit
 //
 //  Created by Rob Ringham on 8/3/14.
 //  Copyright (c) 2014 Rob Ringham. All rights reserved.
 //
 
-#import "AlertKit.h"
+#import "AKAlert.h"
 #import <UIKit/UIKit.h>
 
-@implementation AlertKit
+@implementation AKAlert
 
 - (id)initWithAlertMessage:(NSString *)alertMessage {
     self = [super init];
