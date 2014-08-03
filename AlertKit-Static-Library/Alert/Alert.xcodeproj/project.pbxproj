@@ -534,6 +534,7 @@
 				9BA67DF6198E890A00D77769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BA67DF7198E890A00D77769 /* Build configuration list for PBXNativeTarget "AlertTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +543,7 @@
 				9BA67DF9198E890A00D77769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
