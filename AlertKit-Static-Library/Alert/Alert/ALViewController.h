@@ -10,4 +10,6 @@
 
 @interface ALViewController : UIViewController
 
+- (IBAction)alertButtonPressed:(id)sender;
+
 @end
