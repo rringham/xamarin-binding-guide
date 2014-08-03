@@ -22,6 +22,7 @@
 		9BA67DE7198E890A00D77769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67DC6198E890A00D77769 /* UIKit.framework */; };
 		9BA67DEF198E890A00D77769 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BA67DED198E890A00D77769 /* InfoPlist.strings */; };
 		9BA67DF1198E890A00D77769 /* AlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA67DF0198E890A00D77769 /* AlertTests.m */; };
+		9BA67E37198E898800D77769 /* libAlertKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA67E32198E895D00D77769 /* libAlertKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9BA67DBE198E890A00D77769;
 			remoteInfo = Alert;
+		};
+		9BA67E31198E895D00D77769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BA67E03198E895D00D77769;
+			remoteInfo = AlertKit;
+		};
+		9BA67E33198E895D00D77769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BA67E13198E895D00D77769;
+			remoteInfo = AlertKitTests;
+		};
+		9BA67E35198E898300D77769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA67E02198E895D00D77769;
+			remoteInfo = AlertKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,6 +77,7 @@
 		9BA67DEC198E890A00D77769 /* AlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlertTests-Info.plist"; sourceTree = "<group>"; };
 		9BA67DEE198E890A00D77769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BA67DF0198E890A00D77769 /* AlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertTests.m; sourceTree = "<group>"; };
+		9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlertKit.xcodeproj; path = Libraries/AlertKit/AlertKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA67E37198E898800D77769 /* libAlertKit.a in Frameworks */,
 				9BA67DC5198E890A00D77769 /* CoreGraphics.framework in Frameworks */,
 				9BA67DC7198E890A00D77769 /* UIKit.framework in Frameworks */,
 				9BA67DC3198E890A00D77769 /* Foundation.framework in Frameworks */,
@@ -84,6 +108,7 @@
 		9BA67DB6198E890A00D77769 = {
 			isa = PBXGroup;
 			children = (
+				9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */,
 				9BA67DC8198E890A00D77769 /* Alert */,
 				9BA67DEA198E890A00D77769 /* AlertTests */,
 				9BA67DC1198E890A00D77769 /* Frameworks */,
@@ -155,6 +180,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9BA67E2D198E895D00D77769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA67E32198E895D00D77769 /* libAlertKit.a */,
+				9BA67E34198E895D00D77769 /* AlertKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9BA67E36198E898300D77769 /* PBXTargetDependency */,
 			);
 			name = Alert;
 			productName = Alert;
@@ -219,6 +254,12 @@
 			mainGroup = 9BA67DB6198E890A00D77769;
 			productRefGroup = 9BA67DC0198E890A00D77769 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9BA67E2D198E895D00D77769 /* Products */;
+					ProjectRef = 9BA67E2C198E895D00D77769 /* AlertKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9BA67DBE198E890A00D77769 /* Alert */,
@@ -226,6 +267,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9BA67E32198E895D00D77769 /* libAlertKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAlertKit.a;
+			remoteRef = 9BA67E31198E895D00D77769 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9BA67E34198E895D00D77769 /* AlertKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlertKitTests.xctest;
+			remoteRef = 9BA67E33198E895D00D77769 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9BA67DBD198E890A00D77769 /* Resources */ = {
@@ -275,6 +333,11 @@
 			isa = PBXTargetDependency;
 			target = 9BA67DBE198E890A00D77769 /* Alert */;
 			targetProxy = 9BA67DE8198E890A00D77769 /* PBXContainerItemProxy */;
+		};
+		9BA67E36198E898300D77769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertKit;
+			targetProxy = 9BA67E35198E898300D77769 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
