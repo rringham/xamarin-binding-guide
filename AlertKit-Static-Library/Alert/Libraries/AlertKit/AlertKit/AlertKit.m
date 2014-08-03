@@ -7,7 +7,25 @@
 //
 
 #import "AlertKit.h"
+#import <UIKit/UIKit.h>
 
 @implementation AlertKit
+
+- (id)initWithAlertMessage:(NSString *)alertMessage {
+    self = [super init];
+    if (self) {
+        _alertMessage = alertMessage;
+    }
+    return self;
+}
+
+- (void)alert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!"
+                                                        message:self.alertMessage
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil, nil];
+    [alertView show];
+}
 
 @end

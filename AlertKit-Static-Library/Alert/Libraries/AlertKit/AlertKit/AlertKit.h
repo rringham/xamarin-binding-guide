@@ -10,4 +10,9 @@
 
 @interface AlertKit : NSObject
 
+- (id)initWithAlertMessage:(NSString *)alertMessage;
+- (void)alert;
+
+@property (nonatomic, readonly, assign) NSString *alertMessage;
+
 @end
