@@ -22,3 +22,7 @@ DerivedData
 
 #Project files
 [Bb]uild/
+
+# Xamarin
+bin/
+obj/
