@@ -109,4 +109,10 @@
     <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Libraries\AlertKitBinding\AlertKitBinding.csproj">
+      <Project>{78000CB6-33AC-4AD6-A38F-772E14249C4A}</Project>
+      <Name>AlertKitBinding</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
