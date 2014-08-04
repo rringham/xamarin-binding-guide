@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AKAlert.h"
 
-@interface ALViewController : UIViewController
+@interface ALViewController : UIViewController<AKAlertDelegate>
 
 - (IBAction)alertButtonPressed:(id)sender;
 

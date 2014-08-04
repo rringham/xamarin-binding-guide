@@ -7,10 +7,11 @@
 //
 
 #import "ALViewController.h"
-#import "AKAlert.h"
 
-@interface ALViewController ()
-
+@interface ALViewController () {
+@private
+    AKAlert *akAlert;
+}
 @end
 
 @implementation ALViewController
@@ -29,8 +30,17 @@
 
 - (IBAction)alertButtonPressed:(id)sender
 {
-    AKAlert *ak = [[AKAlert alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred!"];
-    [ak alert];
+    akAlert = [[AKAlert alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred!"];
+    akAlert.delegate = self;
+    
+    [akAlert alert];
+}
+
+#pragma mark - AKAlertDelegate
+
+- (void)successfullyAlertedUser
+{
+    self.view.backgroundColor = [UIColor blueColor];    
 }
 
 @end

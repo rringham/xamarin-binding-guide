@@ -7,12 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface AKAlert : NSObject
+@protocol AKAlertDelegate <NSObject>
+
+- (void)successfullyAlertedUser;
+
+@end
+
+@interface AKAlert : NSObject<UIAlertViewDelegate>
 
 - (id)initWithAlertMessage:(NSString *)alertMessage;
 - (void)alert;
 
+@property (nonatomic, strong) id<AKAlertDelegate> delegate;
 @property (nonatomic, readonly, assign) NSString *alertMessage;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "AKAlert.h"
-#import <UIKit/UIKit.h>
 
 @implementation AKAlert
 
@@ -22,10 +21,21 @@
 - (void)alert {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!"
                                                         message:self.alertMessage
-                                                       delegate:nil
+                                                       delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil, nil];
     [alertView show];
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (!self.delegate) {
+        return;
+    }
+    
+    [self.delegate successfullyAlertedUser];
 }
 
 @end
