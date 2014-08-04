@@ -54,6 +54,15 @@ namespace XamarinAlert
 		}
 
 		#endregion
+
+		#region Actions
+
+		[Action ("AlertButtonPressed:")]
+		public void AlertButtonPressed (NSObject sender)
+		{
+		}
+
+		#endregion
 	}
 }
 

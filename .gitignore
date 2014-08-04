@@ -26,3 +26,4 @@ DerivedData
 # Xamarin
 bin/
 obj/
+*.userprefs
