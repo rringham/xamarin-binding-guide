@@ -30,7 +30,7 @@
 
 - (IBAction)alertButtonPressed:(id)sender
 {
-    akAlert = [[AKAlert alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred!"];
+    akAlert = [[AKAlert alloc] initWithAlertMessage:@"Oh no, somethign alert-worthy has occurred in our native iOS host app!"];
     akAlert.delegate = self;
     
     [akAlert alert];
