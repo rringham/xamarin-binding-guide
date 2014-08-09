@@ -44,4 +44,12 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libAlertKit.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libAlertKit.linkwith.cs">
+      <DependentUpon>libAlertKit.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
