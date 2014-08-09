@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlertKitBinding
+namespace AlertKit
 {
 }
 

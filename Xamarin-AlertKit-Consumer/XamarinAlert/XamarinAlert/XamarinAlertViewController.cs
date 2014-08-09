@@ -4,13 +4,17 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
+using AlertKit;
+
 namespace XamarinAlert
 {
-	public partial class XamarinAlertViewController : UIViewController
+	public partial class XamarinAlertViewController : UIViewController, IAKAlertDelegate
 	{
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
+
+		private AKAlert akAlert;
 
 		public XamarinAlertViewController (IntPtr handle) : base (handle)
 		{
@@ -60,9 +64,19 @@ namespace XamarinAlert
 		[Action ("AlertButtonPressed:")]
 		public void AlertButtonPressed (NSObject sender)
 		{
+			akAlert = new AKAlert (new NSString("Oh no, somethign alert-worthy has occurred!"));
+			akAlert.Delegate = this;
+			akAlert.Alert ();
+		}
+
+		#endregion
+
+		#region
+
+		public void SuccessfullyAlertedUser ()
+		{
 		}
 
 		#endregion
 	}
 }
-
